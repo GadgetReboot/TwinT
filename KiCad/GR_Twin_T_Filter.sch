@@ -226,8 +226,6 @@ Text Label 2600 7200 0    50   ~ 0
 Vbias
 Wire Wire Line
 	3500 3900 3650 3900
-Wire Wire Line
-	3650 3900 3650 2700
 $Comp
 L Connector:TestPoint TP4
 U 1 1 609C5A61
@@ -486,94 +484,77 @@ Wire Wire Line
 $Comp
 L Device:C_Small C2
 U 1 1 60D1E68B
-P 2750 2700
-F 0 "C2" V 2700 2500 50  0000 L CNN
-F 1 "10n" V 2700 2800 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2750 2700 50  0001 C CNN
-F 3 "~" H 2750 2700 50  0001 C CNN
-	1    2750 2700
+P 2750 2400
+F 0 "C2" V 2700 2200 50  0000 L CNN
+F 1 "10n" V 2700 2500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2750 2400 50  0001 C CNN
+F 3 "~" H 2750 2400 50  0001 C CNN
+	1    2750 2400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R4
 U 1 1 60D1EFDD
-P 3050 2900
-F 0 "R4" H 2950 2950 50  0000 R CNN
-F 1 "680" H 3000 2850 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3050 2900 50  0001 C CNN
-F 3 "~" H 3050 2900 50  0001 C CNN
-	1    3050 2900
+P 3050 2600
+F 0 "R4" H 2950 2650 50  0000 R CNN
+F 1 "680" H 3000 2550 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 3050 2600 50  0001 C CNN
+F 3 "~" H 3050 2600 50  0001 C CNN
+	1    3050 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT_US R5
 U 1 1 60D2214B
-P 3050 3200
-F 0 "R5" H 2950 3250 50  0000 R CNN
-F 1 "10K" H 3000 3150 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 3200 50  0001 C CNN
-F 3 "~" H 3050 3200 50  0001 C CNN
-	1    3050 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR02
-U 1 1 60D239C3
-P 3050 3450
-F 0 "#PWR02" H 3050 3200 50  0001 C CNN
-F 1 "GNDREF" H 3300 3175 50  0001 C CNN
-F 2 "" H 3050 3450 50  0001 C CNN
-F 3 "" H 3050 3450 50  0001 C CNN
-	1    3050 3450
+P 3050 2900
+F 0 "R5" H 2950 2950 50  0000 R CNN
+F 1 "10K" H 3000 2850 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 2900 50  0001 C CNN
+F 3 "~" H 3050 2900 50  0001 C CNN
+	1    3050 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C3
 U 1 1 60D4EDCD
-P 3350 2700
-F 0 "C3" V 3300 2500 50  0000 L CNN
-F 1 "22n" V 3300 2800 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3350 2700 50  0001 C CNN
-F 3 "~" H 3350 2700 50  0001 C CNN
-	1    3350 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3050 3400 3050 3350
-Wire Wire Line
-	3050 3050 3050 3000
-Wire Wire Line
-	3250 2700 3050 2700
-Wire Wire Line
-	3050 2800 3050 2700
-Connection ~ 3050 2700
-Wire Wire Line
-	3050 2700 2850 2700
-Wire Wire Line
-	3450 2700 3650 2700
-Connection ~ 3650 2700
-Wire Wire Line
-	2650 2700 2450 2700
-Connection ~ 2450 2700
-Wire Wire Line
-	2450 2700 2450 3800
-Wire Wire Line
-	3200 3200 3200 3400
-Wire Wire Line
-	3200 3400 3050 3400
-Wire Wire Line
-	3050 3450 3050 3400
-Connection ~ 3050 3400
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 60D6F98F
 P 3350 2400
-F 0 "J1" V 3350 2550 50  0000 L CNN
-F 1 "Conn_01x03" V 3313 2580 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3350 2400 50  0001 C CNN
+F 0 "C3" V 3300 2200 50  0000 L CNN
+F 1 "22n" V 3300 2500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3350 2400 50  0001 C CNN
 F 3 "~" H 3350 2400 50  0001 C CNN
 	1    3350 2400
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 3100 3050 3050
+Wire Wire Line
+	3050 2750 3050 2700
+Wire Wire Line
+	3250 2400 3050 2400
+Wire Wire Line
+	3050 2500 3050 2400
+Connection ~ 3050 2400
+Wire Wire Line
+	3050 2400 2850 2400
+Wire Wire Line
+	3450 2400 3650 2400
+Wire Wire Line
+	2650 2400 2450 2400
+Wire Wire Line
+	3200 2900 3200 3100
+Wire Wire Line
+	3200 3100 3050 3100
+Connection ~ 3050 3100
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 60D6F98F
+P 4500 2300
+F 0 "J1" V 4500 2450 50  0000 L CNN
+F 1 "Conn_01x03" V 4463 2480 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4500 2300 50  0001 C CNN
+F 3 "~" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R3
@@ -619,39 +600,25 @@ F 3 "~" H 3350 1500 50  0001 C CNN
 	1    3350 1500
 	0    -1   -1   0   
 $EndComp
-Text Notes 3400 2550 0    50   ~ 0
+Text Notes 4650 2450 1    50   ~ 0
 Gnd\n
-Text Notes 3200 2550 0    50   ~ 0
-Tee\n
+Text Notes 4650 2250 1    50   ~ 0
+Ext.
 $Comp
 L power:GNDREF #PWR01
 U 1 1 60D8EE0D
-P 3550 2200
-F 0 "#PWR01" H 3550 1950 50  0001 C CNN
-F 1 "GNDREF" H 3800 1925 50  0001 C CNN
-F 2 "" H 3550 2200 50  0001 C CNN
-F 3 "" H 3550 2200 50  0001 C CNN
-	1    3550 2200
+P 4250 2600
+F 0 "#PWR01" H 4250 2350 50  0001 C CNN
+F 1 "GNDREF" H 4500 2325 50  0001 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2200 3250 2150
+	4300 2400 4250 2400
 Wire Wire Line
-	3250 2150 3050 2150
-Wire Wire Line
-	3050 2150 3050 2700
-Wire Wire Line
-	3050 2050 3050 2100
-Wire Wire Line
-	3050 2100 3350 2100
-Wire Wire Line
-	3350 2100 3350 2200
-Wire Wire Line
-	3450 2200 3450 2150
-Wire Wire Line
-	3450 2150 3550 2150
-Wire Wire Line
-	3550 2150 3550 2200
+	4250 2400 4250 2600
 Wire Wire Line
 	3050 1850 3050 1800
 Wire Wire Line
@@ -666,9 +633,9 @@ Wire Wire Line
 Wire Wire Line
 	2650 1500 2450 1500
 Wire Wire Line
-	2450 1500 2450 2700
+	2450 1500 2450 2400
 Wire Wire Line
-	3650 1500 3650 2700
+	3650 1500 3650 2400
 $Comp
 L power:GNDREF #PWR06
 U 1 1 60DC6FB5
@@ -728,7 +695,7 @@ Wire Wire Line
 	3650 4700 3650 4900
 Wire Wire Line
 	3500 4550 3250 4550
-Text Notes 3300 3250 0    50   ~ 0
+Text Notes 3300 2950 0    50   ~ 0
 Freq.\n
 Text Notes 3900 4550 0    50   ~ 0
 Q Adj.
@@ -810,4 +777,35 @@ Spare \nOp Amp
 Text Notes 1700 6000 2    50   ~ 0
 Jumper Vout to\nVin- when unused
 Connection ~ 2300 4000
+Wire Wire Line
+	4000 2200 4300 2200
+Connection ~ 2450 2400
+Connection ~ 3650 2400
+Wire Wire Line
+	3650 2400 3650 3900
+Wire Wire Line
+	2450 2400 2450 3800
+Wire Wire Line
+	3800 2300 3800 2150
+Wire Wire Line
+	3800 2150 3050 2150
+Wire Wire Line
+	3050 2050 3050 2150
+Wire Wire Line
+	3800 2300 4300 2300
+Wire Wire Line
+	3050 3250 3800 3250
+Wire Wire Line
+	3800 3250 3800 2300
+Wire Wire Line
+	3050 3100 3050 3250
+Connection ~ 3800 2300
+Text Label 4000 2200 0    50   ~ 0
+Ext.Use
+Text Notes 4750 2400 0    50   ~ 0
+Optional T \ncommon node termination\nGND or externally connected
+Wire Wire Line
+	4300 2200 4300 2300
+Connection ~ 4300 2200
+Connection ~ 4300 2300
 $EndSCHEMATC
